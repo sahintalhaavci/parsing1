@@ -26,7 +26,7 @@ def get_data(html):
         
 
 def write_csv(data: dict) -> None:
-    with open('cars.csv', 'a') as csv_file:
+    with open('news.csv', 'a') as csv_file:
         fieldnames = ['title']
         writer = csv.DictWriter(csv_file, delimiter='/', fieldnames=fieldnames)
         writer.writerow(data)
